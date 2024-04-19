@@ -1,0 +1,403 @@
+*,
+*:after,
+*:before
+* {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+
+body{
+    background-color: #f2f3f4;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #323232;
+    line-height: 1.6;
+    margin: 0;
+    
+}
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url(./images/maingirl.png) center no-repeat;
+    background-size: cover ;
+}
+
+.stock{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.intro__title{
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1;
+
+}
+
+.intro__title::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 30px auto 30px;
+    background-color: #fff;
+
+}
+
+
+
+.container__intro{
+    padding-top: 500px;
+}
+
+
+
+
+.intro__inner{
+    
+    width: 100%;
+    max-width: 1000px;
+    margin: 0  auto;
+    text-align: center;
+    
+}
+
+
+
+
+.header__inner{
+    padding-left: 50px;
+    padding-right: 50px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    padding-top: 15px;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.nav{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.nav__link{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+.nav__link:hover{
+ color: #D9D9D9;
+}
+.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    display: none;
+    
+    background-color: #D9D9D9;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    
+}
+.nav__link:hover::after{
+    display: block;
+    
+}
+
+
+.btn{
+    display: inline-block ;
+    vertical-align: top;
+    padding: 10px 40px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(0 196 255 / 67%);
+    border-radius: 30px;
+ 
+}
+
+.btn:hover{
+    color: #000000;
+    transform: scale(1.04);
+    transition: all 0.5s linear;
+
+}
+
+.section{
+padding-bottom: 20px;
+}
+.section__header{
+  width: 100%;
+  max-width: 1800;
+  margin: 0 auto 40;
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+
+.about{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_about {
+    justify-content: space-between;
+    text-align: center;
+    }
+
+
+  .about__grid{
+    display: flex;
+    column-gap: 50px;
+    flex-wrap: wrap;
+
+  }
+
+  .trainers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 100px;
+}
+
+.trainer-card {
+    display: flex;
+    align-items: center;
+    background-color: #FEFEFE;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.trainer-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.trainer-bio {
+    flex-grow: 1;
+}
+
+.trainer-bio h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.trainer-bio p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.finding__title{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+    color: #FFF;
+    background-color: #575758;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.finding__container{
+    color: #FFF;
+    background-color: #2C2C2C;
+}
+
+
+.map{
+    border-radius: 5%;
+    margin: 30px
+}
+
+ /*finding*/
+
+.finding__suptitle{
+    line-height: 2;
+}
+.finding__suptitle h3{
+    font-size: 20px;
+}
+.finding__suptitle h4{
+    font-size: 14px;
+}
+.finding__suptitle li{
+
+}
+.finding__about {
+    width: 100%;
+align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*clubcard*/
+
+.clubcard{
+    width: 100%;
+    background-color: #f2f3f4;
+
+}
+.clubcard__title{
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+   
+    margin-bottom: 20px;
+}   
+.clubcard__inner{
+    display: flex;
+    column-gap: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+.clubcard__suptitle{
+    text-align: center;
+    align-items: center;
+    
+}
+.card__btn{
+    display: inline-block;
+    padding-inline: 32px;
+    font-size: 30px;
+    background-color: #2C2C2C;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    
+}
+.card__btn:hover{
+    transform: scale(1.01);
+    transition: all 0.2s linear;
+}
+
+
+.compound__header{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+    color: #cfcdcd;
+    background-color: #717172;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+
+.compound__grid{
+    display: flex;
+    column-gap: 50px;
+    flex-wrap: wrap;
+
+  }
+
+  .compound-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 50px;
+}
+
+.compound-card {
+    display: flex;
+    align-items: center;
+    background-color: #cfcdcd;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.compound-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.compound-bio {
+    flex-grow: 1;
+}
+
+.compound-bio h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.compound-bio p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
